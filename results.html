@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Snyk test report</title>
+  <meta name="description" content="1 known vulnerabilities found in 1 vulnerable dependency paths.">
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/snyk/image/upload/v1468845142/favicon/favicon.png"
+    sizes="194x194">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/snyk/image/upload/v1468845142/favicon/favicon.ico">
+  <style type="text/css">
+  
+    body {
+      -moz-font-feature-settings: "pnum";
+      -webkit-font-feature-settings: "pnum";
+      font-variant-numeric: proportional-nums;
+      display: flex;
+      flex-direction: column;
+      font-feature-settings: "pnum";
+      font-size: 100%;
+      line-height: 1.5;
+      min-height: 100vh;
+      -webkit-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #F5F5F5;
+      font-family: 'Arial', 'Helvetica', Calibri, sans-serif;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 500;
+    }
+  
+    a,
+    a:link,
+    a:visited {
+      border-bottom: 1px solid #4b45a9;
+      text-decoration: none;
+      color: #4b45a9;
+    }
+  
+    a:hover,
+    a:focus,
+    a:active {
+      border-bottom: 2px solid #4b45a9;
+    }
+  
+    hr {
+      border: none;
+      margin: 1em 0;
+      border-top: 1px solid #c5c5c5;
+    }
+  
+    ul {
+      padding: 0 1em;
+      margin: 1em 0;
+    }
+  
+    code {
+      background-color: #EEE;
+      color: #333;
+      padding: 0.25em 0.5em;
+      border-radius: 0.25em;
+    }
+  
+    pre {
+      background-color: #333;
+      font-family: monospace;
+      padding: 0.5em 1em 0.75em;
+      border-radius: 0.25em;
+      font-size: 14px;
+    }
+  
+    pre code {
+      padding: 0;
+      background-color: transparent;
+      color: #fff;
+    }
+  
+    a code {
+      border-radius: .125rem .125rem 0 0;
+      padding-bottom: 0;
+      color: #4b45a9;
+    }
+  
+    a[href^="http://"]:after,
+    a[href^="https://"]:after {
+      background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20112%20109%22%3E%3Cg%20id%3D%22Page-1%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20id%3D%22link-external%22%3E%3Cg%20id%3D%22arrow%22%3E%3Cpath%20id%3D%22Line%22%20stroke%3D%22%234B45A9%22%20stroke-width%3D%2215%22%20d%3D%22M88.5%2021l-43%2042.5%22%20stroke-linecap%3D%22square%22%2F%3E%3Cpath%20id%3D%22Triangle%22%20fill%3D%22%234B45A9%22%20d%3D%22M111.2%200v50L61%200z%22%2F%3E%3C%2Fg%3E%3Cpath%20id%3D%22square%22%20fill%3D%22%234B45A9%22%20d%3D%22M66%2015H0v94h94V44L79%2059v35H15V30h36z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+      background-repeat: no-repeat;
+      background-size: .75rem;
+      content: "";
+      display: inline-block;
+      height: .75rem;
+      margin-left: .25rem;
+      width: .75rem;
+    }
+  
+  
+  /* Layout */
+  
+    [class*=layout-container] {
+      margin: 0 auto;
+      max-width: 71.25em;
+      padding: 1.9em 1.3em;
+      position: relative;
+    }
+    .layout-container--short {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+    .layout-container--short:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  
+  /* Header */
+  
+    .header {
+      padding-bottom: 1px;
+    }
+  
+    .project__header {
+      background-color: #4C4A73;
+      color: #fff;
+      margin-bottom: -1px;
+      padding-top: 1em;
+      padding-bottom: 0.25em;
+      border-bottom: 2px solid #BBB;
+    }
+  
+    .project__header__title {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-all;
+      margin-bottom: .1em;
+      margin-top: 0;
+      float: left;
+    }
+  
+    .timestamp {
+      float: right;
+      clear: none;
+      margin-bottom: 0;
+    }
+  
+    .meta-counts {
+      clear: both;
+      display: block;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 0 1.5em;
+      color: #fff;
+      clear: both;
+      font-size: 1.1em;
+    }
+  
+    .meta-count {
+      display: block;
+      flex-basis: 100%;
+      margin: 0 1em 1em 0;
+      float: left;
+      padding-right: 1em;
+      border-right: 2px solid #fff;
+    }
+  
+    .meta-count:last-child {
+      border-right: 0;
+      padding-right: 0;
+      margin-right: 0;
+    }
+  
+  /* Card */
+  
+    .card {
+      background-color: #fff;
+      border: 1px solid #c5c5c5;
+      border-radius: .25rem;
+      margin: 0 0 2em 0;
+      position: relative;
+      min-height: 40px;
+      padding: 1.5em;
+    }
+  
+    .card .label {
+      background-color: #767676;
+      border: 2px solid #767676;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 0;
+      border-radius: 0.25rem;
+    }
+  
+    .card .label__text {
+      vertical-align: text-top;
+    }
+  
+    .card .label--high {
+      background-color: #B51B72;
+      border-color: #B51B72;
+    }
+  
+    .card .label--medium {
+      background-color: #E29022;
+      border-color: #E29022;
+    }
+  
+    .card .label--low {
+      background-color: #222049;
+      border-color: #222049;
+    }
+  
+    .card .card.severity--low {
+      border-color: #222049;
+    }
+  
+    .card .card.severity--medium {
+      border-color: #E29022;
+    }
+  
+    .card .card.severity--high {
+      border-color: #B51B72;
+    }
+  
+    .card--vuln {
+      padding-top: 4em;
+      max-width: 48.75em;
+    }
+  
+    .card--vuln .label {
+      left: 0;
+      position: absolute;
+      top: 1.1em;
+      padding-left: 1.9em;
+      padding-right: 1.9em;
+      border-radius: 0 0.25rem 0.25rem 0;
+    }
+  
+    .card--vuln .card__section h2 {
+      font-size: 22px;
+      margin-bottom: 0.5em;
+    }
+  
+    .card--vuln .card__section p {
+      margin: 0 0 0.5em 0;
+    }
+  
+    .card--vuln .card__meta {
+      padding: 0 0 0 1em;
+      margin: 0;
+      font-size: 1.1em;
+    }
+  
+    .card .card__meta__paths {
+      font-size: 0.9em;
+    }
+  
+    .card--vuln .card__title {
+      font-size: 28px;
+      margin-top: 0;
+    }
+  
+    .card--vuln .card__cta p {
+      margin: 0;
+      text-align: right;
+    }
+  
+    .source-panel {
+      clear: both;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.5em 0;
+      width: fit-content;
+      padding: 0.5em;
+    }
+  
+  
+  
+  </style>
+</head>
+
+<body class="section-projects">
+  <main class="layout-stacked">
+
+    <div class="layout-stacked__header header">
+      <header class="project__header">
+        <div class="layout-container--short">
+          <h1 class="project__header__title">Snyk test report</h1>
+          <p class="timestamp">November 25th 2019, 6:24:38 pm</p>
+          <div class="source-panel">
+            <span>Scanned the following path:</span>
+            <ul>
+              <li>/Users/swschmidt/Snyk/Workspace/go-goof-github (gomodules)</li>
+            </ul>
+          </div>
+
+          <div class="meta-counts">
+            <div class="meta-count"><span>1</span> <span>known vulnerabilities</span></div>
+            <div class="meta-count"><span>1 vulnerable dependency paths</span></div>
+            <div class="meta-count"><span>40</span> <span>dependencies</span></div>
+          </div><!-- .meta-counts -->
+        </div><!-- .layout-container--short -->
+      </header><!-- .project__header -->
+    </div><!-- .layout-stacked__header -->
+
+    <div class="layout-stacked__content">
+      <div class="layout-container--short" style="padding-top: 35px;">
+        <div class="cards--vuln filter--patch filter--ignore">
+          <div class="card card--vuln  disclosure--not-new severity--high" >
+              <h2 class="card__title">Directory Traversal</h2>
+              <div class="card__section">
+          
+                  <div class="label label--high">
+                      <span class="label__text">high severity</span>
+                  </div>
+          
+                  <hr/>
+          
+                  <ul class="card__meta">
+                      <li class="card__meta__item">
+                          Package Manager: golang
+                      </li>
+                      <li class="card__meta__item">
+                              Vulnerable module:
+          
+                              github.com/gogs/gogs/pkg/tool
+                      </li>
+          
+                      <li class="card__meta__item">Introduced through:
+          
+                                  go-goof@0.0.0 and github.com/gogs/gogs/pkg/tool@v0.11.66
+          
+                      </li>
+                  </ul>
+          
+                  <hr/>
+          
+                      <h3 class="card__section__title">Detailed paths</h3>
+          
+                  <ul class="card__meta__paths">
+                              <li>
+                              <span class="list-paths__item__introduced"><em>Introduced through</em>:
+                                      go-goof@0.0.0
+                                       <span class="list-paths__item__arrow">›</span> 
+                                      github.com/gogs/gogs/pkg/tool@v0.11.66
+                                      
+                              </span>
+          
+                          </li>
+                          </li>
+                  </ul><!-- .list-paths -->
+          
+              </div><!-- .card__section -->
+          
+              <hr/>
+              <!-- Overview -->
+              <h2 id="overview">Overview</h2>
+          <p><a href="https://github.com/gogs/gogs">github.com/gogs/gogs/pkg/tool</a> is a self-hosted Git service.</p>
+          <p>Affected versions of this package are vulnerable to Directory Traversal
+          via the <code>file-upload</code> functionality. An attacker could create a file under <code>data/sessions</code> on the server.</p>
+          <h2 id="details">Details</h2>
+          <p>A Directory Traversal attack (also known as path traversal) aims to access files and directories that are stored outside the intended folder. By manipulating files with &quot;dot-dot-slash (../)&quot; sequences and its variations, or by using absolute file paths, it may be possible to access arbitrary files and directories stored on file system, including application source code, configuration, and other critical system files.</p>
+          <p>Directory Traversal vulnerabilities can be generally divided into two types:</p>
+          <ul>
+          <li><strong>Information Disclosure</strong>: Allows the attacker to gain information about the folder structure or read the contents of sensitive files on the system.</li>
+          </ul>
+          <p><code>st</code> is a module for serving static files on web pages, and contains a <a href="https://snyk.io/vuln/npm:st:20140206">vulnerability of this type</a>. In our example, we will serve files from the <code>public</code> route.</p>
+          <p>If an attacker requests the following URL from our server, it will in turn leak the sensitive private key of the root user.</p>
+          <pre><code>curl http://localhost:8080/public/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/root/.ssh/id_rsa</code></pre><p><strong>Note</strong> <code>%2e</code> is the URL encoded version of <code>.</code> (dot).</p>
+          <ul>
+          <li><strong>Writing arbitrary files</strong>: Allows the attacker to create or replace existing files. This type of vulnerability is also known as <code>Zip-Slip</code>. </li>
+          </ul>
+          <p>One way to achieve this is by using a malicious <code>zip</code> archive that holds path traversal filenames. When each filename in the zip archive gets concatenated to the target extraction folder, without validation, the final path ends up outside of the target folder. If an executable or a configuration file is overwritten with a file containing malicious code, the problem can turn into an arbitrary code execution issue quite easily.</p>
+          <p>The following is an example of a <code>zip</code> archive with one benign file and one malicious file. Extracting the malicious file will result in traversing out of the target folder, ending up in <code>/root/.ssh/</code> overwriting the <code>authorized_keys</code> file:</p>
+          <pre><code>2018-04-15 22:04:29 .....           19           19  good.txt
+          2018-04-15 22:04:42 .....           20           20  ../../../../../../root/.ssh/authorized_keys</code></pre><h2 id="remediation">Remediation</h2>
+          <p>Upgrade <code>github.com/gogs/gogs/pkg/tool</code> to version 0.11.82 or higher.</p>
+          <h2 id="references">References</h2>
+          <ul>
+          <li><a href="https://github.com/gogs/gogs/commit/ff93d9dbda5cebe90d86e4b7dfb2c6b8642970ce">GitHub Commit</a></li>
+          </ul>
+          
+              <hr/>
+          
+              <div class="cta card__cta">
+                  <p><a href="https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMGOGSGOGSPKGTOOL-173703">More about this vulnerability</a></p>
+              </div>
+          
+          </div><!-- .card -->        </div><!-- cards -->
+      </div>
+    </div><!-- .layout-container -->
+
+  </main><!-- .layout-stacked__content -->
+</body>
+
+</html>
