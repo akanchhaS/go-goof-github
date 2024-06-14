@@ -1,28 +1,66 @@
-module go-goof
-
-go 1.12
-
+module bitbucket.org/vapotherm/stargate_orgmgt
+go 1.20
 require (
-	github.com/Unknwon/com v0.0.0-20190321035513-0fed4efef755 // indirect
-	github.com/Unknwon/i18n v0.0.0-20171114194641-b64d33658966 // indirect
-	github.com/bradfitz/gomemcache v0.0.0-20190329173943-551aad21a668 // indirect
-	github.com/fatih/color v1.7.0 // indirect
-	github.com/gin-gonic/gin v1.4.0
-	github.com/go-macaron/cache v0.0.0-20151013081102-561735312776 // indirect
-	github.com/go-macaron/inject v0.0.0-20160627170012-d8a0b8677191 // indirect
-	github.com/go-macaron/session v0.0.0-20190131233854-0a0a789bf193 // indirect
-	github.com/gogs/chardet v0.0.0-20150115103509-2404f7772561 // indirect
-	github.com/gogs/go-libravatar v0.0.0-20161120025154-cd1abbd55d09 // indirect
-	github.com/gogs/gogs v0.11.66
-	github.com/gogs/minwinsvc v0.0.0-20170301035411-95be6356811a // indirect
-	github.com/mattn/go-colorable v0.1.2 // indirect
-	github.com/mcuadros/go-version v0.0.0-20190308113854-92cdf37c5b75 // indirect
-	github.com/pstember/go-goof/hello v0.0.0-20190715094659-dd899fd4135f
-	github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca // indirect
-	golang.org/x/net v0.0.0-20190620200207-3b0461eec859 // indirect
-	gopkg.in/bufio.v1 v1.0.0-20140618132640-567b2bfa514e // indirect
-	gopkg.in/clog.v1 v1.2.0 // indirect
-	gopkg.in/ini.v1 v1.44.0 // indirect
-	gopkg.in/macaron.v1 v1.3.2 // indirect
-	gopkg.in/redis.v2 v2.3.2 // indirect
+    bitbucket.org/onymos/go/access v1.0.1
+    bitbucket.org/onymos/go/datastore v1.2.3
+    cloud.google.com/go/pubsub v1.30.0
+    github.com/gin-gonic/gin v1.9.0
+    github.com/google/uuid v1.3.0
+    github.com/joho/godotenv v1.5.1
+    github.com/lib/pq v1.10.9
+    github.com/rs/zerolog v1.29.1
+    github.com/stretchr/testify v1.8.2
+)
+require (
+    github.com/stretchr/objx v0.5.0 // indirect
+    github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f // indirect
+    github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
+)
+require (
+    cloud.google.com/go v0.110.0 // indirect
+    cloud.google.com/go/compute v1.19.1 // indirect
+    cloud.google.com/go/compute/metadata v0.2.3 // indirect
+    cloud.google.com/go/iam v1.0.0 // indirect
+    github.com/bytedance/sonic v1.8.8 // indirect
+    github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
+    github.com/davecgh/go-spew v1.1.1 // indirect
+    github.com/gin-contrib/sse v0.1.0 // indirect
+    github.com/go-playground/locales v0.14.1 // indirect
+    github.com/go-playground/universal-translator v0.18.1 // indirect
+    github.com/go-playground/validator/v10 v10.12.0
+    github.com/go-sql-driver/mysql v1.7.1 // indirect
+    github.com/goccy/go-json v0.10.2 // indirect
+    github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
+    github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
+    github.com/golang/protobuf v1.5.3 // indirect
+    github.com/google/go-cmp v0.5.9 // indirect
+    github.com/google/s2a-go v0.1.2 // indirect
+    github.com/googleapis/enterprise-certificate-proxy v0.2.3 // indirect
+    github.com/googleapis/gax-go/v2 v2.8.0 // indirect
+    github.com/json-iterator/go v1.1.12 // indirect
+    github.com/klauspost/cpuid/v2 v2.2.4 // indirect
+    github.com/leodido/go-urn v1.2.3 // indirect
+    github.com/mattn/go-colorable v0.1.13 // indirect
+    github.com/mattn/go-isatty v0.0.18 // indirect
+    github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
+    github.com/modern-go/reflect2 v1.0.2 // indirect
+    github.com/pelletier/go-toml/v2 v2.0.7 // indirect
+    github.com/pmezard/go-difflib v1.0.0 // indirect
+    github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
+    github.com/ugorji/go/codec v1.2.11 // indirect
+    github.com/xeipuuv/gojsonschema v1.2.0
+    go.opencensus.io v0.24.0 // indirect
+    golang.org/x/arch v0.3.0 // indirect
+    golang.org/x/crypto v0.8.0 // indirect
+    golang.org/x/net v0.9.0 // indirect
+    golang.org/x/oauth2 v0.7.0 // indirect
+    golang.org/x/sync v0.1.0 // indirect
+    golang.org/x/sys v0.7.0 // indirect
+    golang.org/x/text v0.9.0 // indirect
+    google.golang.org/api v0.120.0 // indirect
+    google.golang.org/appengine v1.6.7 // indirect
+    google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1 // indirect
+    google.golang.org/grpc v1.54.0 // indirect
+    google.golang.org/protobuf v1.30.0 // indirect
+    gopkg.in/yaml.v3 v3.0.1 // indirect
 )
