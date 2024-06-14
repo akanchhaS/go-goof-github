@@ -1,8 +1,6 @@
 module go-goof
 go 1.20
 require (
-    bitbucket.org/onymos/go/access v1.0.1
-    bitbucket.org/onymos/go/datastore v1.2.3
     cloud.google.com/go/pubsub v1.30.0
     github.com/gin-gonic/gin v1.9.0
     github.com/google/uuid v1.3.0
