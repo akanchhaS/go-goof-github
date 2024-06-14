@@ -1,5 +1,7 @@
 module go-goof
+
 go 1.20
+
 require (
     cloud.google.com/go/pubsub v1.30.0
     github.com/gin-gonic/gin v1.9.0
@@ -9,11 +11,13 @@ require (
     github.com/rs/zerolog v1.29.1
     github.com/stretchr/testify v1.8.2
 )
+
 require (
     github.com/stretchr/objx v0.5.0 // indirect
     github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f // indirect
     github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 )
+
 require (
     cloud.google.com/go v0.110.0 // indirect
     cloud.google.com/go/compute v1.19.1 // indirect
