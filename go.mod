@@ -1,4 +1,4 @@
-module bitbucket.org/vapotherm/stargate_orgmgt
+module go-goof
 go 1.20
 require (
     bitbucket.org/onymos/go/access v1.0.1
